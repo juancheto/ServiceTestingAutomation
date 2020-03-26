@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EmployeesRestAPISuite]">
+  <test thread-count="5" name="EmployeesRestAPISuite(failed)">
+    <classes>
+      <class name="TestCases.TC011_PUT_Employee_Record">
+        <methods>
+          <include name="getEmployeeData"/>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.TC011_PUT_Employee_Record -->
+      <class name="TestCases.TC012_DELETE_Employee_Record">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="getEmployeeData"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC012_DELETE_Employee_Record -->
+    </classes>
+  </test> <!-- EmployeesRestAPISuite(failed) -->
+</suite> <!-- Failed suite [EmployeesRestAPISuite] -->
